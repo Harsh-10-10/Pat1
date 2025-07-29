@@ -2,9 +2,7 @@ import re
 import pandas as pd
 
 
-def natural_sort_key(s):
-    parts = re.split(r'(\d+)', s)
-    return [int(part) if part.isdigit() else part.lower() for part in parts]
+
 
 def extract_company_headers(input_file):
     with open(input_file, "r", encoding="utf-8") as file:   
