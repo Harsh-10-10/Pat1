@@ -1,9 +1,6 @@
 import re
 import pandas as pd
 
-
-
-
 def extract_company_headers(input_file):
     with open(input_file, "r", encoding="utf-8") as file:   
         text = file.read()      # read the file as string
